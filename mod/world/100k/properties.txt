@@ -1,0 +1,22 @@
+Subregion: Outskirts
+Subregion: Industrial Complex
+Subregion: Drainage System
+Subregion: Garbage Wastes
+Subregion: Shoreline
+Subregion: Shaded Citadel
+Subregion: The Exterior
+Subregion: Five Pebbles
+Subregion: Chimney Canopy
+Subregion: Sky Islands
+Subregion: Farm Arrays
+Subregion: Subterranean
+Subregion: Outer Expanse
+Subregion: Pipeyard
+Subregion: Submerged Superstructure
+Subregion: Metropolis
+Subregion: The Rot
+Subregion: Silent Construct
+Subregion: Looks to the Moon
+Subregion: Waterfront Facility
+Subregion: Undergrowth
+Subregion: Rubicon
