@@ -1,10 +1,11 @@
 ﻿{
-	"id": "author.slugtemplate",
-	"name": "Slugcat Template",
-	"version": "0.1.0",
-	"authors": "Author",
-	"description": "A template for making SlugBase mods.",
-	"requirements": [ "slime-cubed.slugbase" ],
-	"requirements_names": [ "SlugBase" ],
-	"tags": [ "Custom Slugcat" ]
+	"id": "raincord_100k",
+	"name": "Raincord 100k Gallery Region",
+	"version": "1.0",
+	"authors": "Rain World Modding Community<LINE>========================<LINE><LINE>--- HOSTS ---<LINE>alduris<LINE>kalumrw<LINE>theshiningshadow<LINE><LINE>--- CODERS ---<LINE>alduris<LINE><LINE>--- ROOM SUBMISSIONS ---<LINE>todo: put participants here<LINE><LINE>--- DECAL ARTISTS ---<LINE>todo: put participants here",
+	"description": "Special gallery region celebrating 100k members in the official Rain World Discord Server",
+	"requirements": [ "pom", "regionkit", "crs", "slime-cubed.slugbase" ],
+	"requirements_names": [ "POM", "RegionKit", "Custom Region Support", "SlugBase" ],
+	"tags": [ "Regions", "Campaigns", "Custom Slugcat" ],
+	"checksum_override_version": false
 }
