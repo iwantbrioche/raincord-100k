@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using Raincord100k.Hooks;
 
 namespace Raincord100k
 {
@@ -12,6 +13,12 @@ namespace Raincord100k
         public void OnEnable()
         {
             On.RainWorld.OnModsInit += Extras.WrapInit(LoadResources);
+            MenuHooks.Apply();
+        }
+
+        public void OnDisable()
+        {
+            MenuHooks.Unapply();
         }
         
         // Load any resources, such as sprites or sounds
