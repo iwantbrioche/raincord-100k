@@ -1,0 +1,5 @@
+{
+	"id": "Raincord100k_Future",
+	"base": [ "Raincord100k_Present", "Rivulet" ],
+	"insert_after": "Rivulet"
+}

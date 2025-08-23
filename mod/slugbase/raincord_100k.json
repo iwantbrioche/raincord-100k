@@ -1,0 +1,24 @@
+{
+	"id": "Raincord100k",
+	"name": "The Raincordian",
+	"description": "A collection of rooms submitted as part of the 100k members celebration of the official Rain World Discord Server.",
+	"features": {
+		"color": "ee88dd",
+		"custom_colors": [
+			{ "name": "Body", "story": "ee88dd" },
+			{ "name": "Eyes", "story": "010101" }
+		],
+
+		"weight": 1.12,
+		"tunnel_speed": 1.2,
+		"climb_speed": 1.25,
+		"walk_speed": 1.2,
+		"throw_skill": 2,
+		"back_spear": true,
+
+		"world_state": "Raincord100k_Present",
+		
+		"select_menu_scene": "Slugcat_Raincord100k",
+		"select_menu_scene_ascended": "Ghost_Raincord100k"
+	}
+}
