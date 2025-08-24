@@ -7,6 +7,8 @@ namespace Raincord100k.Hooks
     {
         public static void Apply()
         {
+            On.Player.Grabability += Player_Grabability;
+
             // Abstract Hooks
             On.AbstractConsumable.IsTypeConsumable += AbstractConsumable_IsTypeConsumable;
             On.AbstractPhysicalObject.Realize += AbstractPhysicalObject_Realize;
@@ -18,6 +20,8 @@ namespace Raincord100k.Hooks
 
         public static void UnApply()
         {
+            On.Player.Grabability -= Player_Grabability;
+
             // Abstract Hooks
             On.AbstractConsumable.IsTypeConsumable -= AbstractConsumable_IsTypeConsumable;
             On.AbstractPhysicalObject.Realize -= AbstractPhysicalObject_Realize;
@@ -78,6 +82,15 @@ namespace Raincord100k.Hooks
         private static bool AbstractConsumable_IsTypeConsumable(On.AbstractConsumable.orig_IsTypeConsumable orig, AbstractPhysicalObject.AbstractObjectType type)
         {
             return type == Constants.ConfettiPlantAOType || orig(type);
+        }
+
+        private static Player.ObjectGrabability Player_Grabability(On.Player.orig_Grabability orig, Player self, PhysicalObject obj)
+        {
+            if (obj is ConfettiPlant)
+            {
+                return Player.ObjectGrabability.OneHand;
+            }
+            return orig(self, obj);
         }
     }
 }

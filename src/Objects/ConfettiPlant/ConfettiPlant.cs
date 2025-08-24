@@ -10,9 +10,9 @@ namespace Raincord100k.Objects.ConfettiPlant
             bodyChunks = new BodyChunk[1];
             bodyChunkConnections = [];
 
-            bodyChunks[0] = new(this, 0, default, 10f, 1f);
+            bodyChunks[0] = new(this, 0, default, 8f, 0.2f);
             collisionLayer = 1;
-            airFriction = 0.9f;
+            airFriction = 0.999f;
             gravity = 0.9f;
             bounce = 0.6f;
             surfaceFriction = 0.8f;
@@ -20,14 +20,14 @@ namespace Raincord100k.Objects.ConfettiPlant
             buoyancy = 1.1f;
 
             bodyChunks[0].HardSetPosition(room.MiddleOfTile(abstractObj.pos));
-
-
-            UnityEngine.Debug.Log("i alive");
         }
         public void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
         {
             sLeaser.sprites = new FSprite[1];
-            sLeaser.sprites[0] = new("Futile_White");
+            sLeaser.sprites[0] = new("Futile_White")
+            {
+                shader = rCam.game.rainWorld.Shaders["JaggedCircle"]
+            };
 
             AddToContainer(sLeaser, rCam, null);
         }
