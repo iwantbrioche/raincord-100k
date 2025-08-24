@@ -1,4 +1,5 @@
-﻿namespace Raincord100k.Hooks
+﻿
+namespace Raincord100k.Hooks
 {
     internal static class MenuHooks
     {

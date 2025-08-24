@@ -1,4 +1,7 @@
-﻿namespace Raincord100k
+﻿using DevInterface;
+using System.Collections.Generic;
+
+namespace Raincord100k
 {
     public static class Constants
     {
@@ -7,5 +10,25 @@
         public static SlugcatStats.Timeline TimelinePast    = new("Raincord100k_Past",    false);
         public static SlugcatStats.Timeline TimelinePresent = new("Raincord100k_Present", false);
         public static SlugcatStats.Timeline TimelineFuture  = new("Raincord100k_Future",  false);
+
+        public static ObjectsPage.DevObjectCategories Raincord100kObjCategory;
+
+        public static PlacedObject.Type ConfettiPlantPOType;
+        public static AbstractPhysicalObject.AbstractObjectType ConfettiPlantAOType;
+
+        /// <summary>
+        /// Registers the ExtEnum values
+        /// </summary>
+        internal static void Register()
+        {
+            Raincord100kObjCategory ??= new("100k Gallery Region", true);
+
+            ConfettiPlantPOType ??= new("ConfettiPlant", true);
+            ConfettiPlantAOType ??= new AbstractPhysicalObject.AbstractObjectType("ConfettiPlant", true);
+            // Add your PlacedObject.Types here
+            POTypes.Add(ConfettiPlantPOType);
+        }
+
+        public static HashSet<PlacedObject.Type> POTypes = [];
     }
 }
