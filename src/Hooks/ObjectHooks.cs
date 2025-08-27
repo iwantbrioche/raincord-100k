@@ -88,7 +88,11 @@ namespace Raincord100k.Hooks
         {
             if (obj is ConfettiPlant)
             {
-                return Player.ObjectGrabability.OneHand;
+                if (!(obj as ConfettiPlant).abstractConsumable.isConsumed)
+                {
+                    return Player.ObjectGrabability.TwoHands;
+                }
+                return Player.ObjectGrabability.BigOneHand;
             }
             return orig(self, obj);
         }

@@ -1,0 +1,60 @@
+{"frames": {
+
+"ConfettiBulbA0.png":
+{
+	"frame": {"x":1,"y":1,"w":19,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":22},
+	"sourceSize": {"w":19,"h":22}
+},
+"ConfettiBulbA1.png":
+{
+	"frame": {"x":20,"y":1,"w":19,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":22},
+	"sourceSize": {"w":19,"h":22}
+},
+"ConfettiBulbA2.png":
+{
+	"frame": {"x":39,"y":1,"w":19,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":22},
+	"sourceSize": {"w":19,"h":22}
+},
+"ConfettiBulbB0.png":
+{
+	"frame": {"x":1,"y":23,"w":19,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":22},
+	"sourceSize": {"w":19,"h":22}
+},
+"ConfettiBulbB1.png":
+{
+	"frame": {"x":20,"y":23,"w":19,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":22},
+	"sourceSize": {"w":19,"h":22}
+},
+"ConfettiBulbB2.png":
+{
+	"frame": {"x":39,"y":23,"w":19,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":22},
+	"sourceSize": {"w":19,"h":22}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ConfettiBulb.png",
+	"format": "RGBA8888",
+	"size": {"w":59,"h":46},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c24d18ac4b5610bdab6c7114bb0e6fe2:3e627a3b66099defc98faf41bc47d53b:ea029ae9846d13cd3c7296b33dbd30f6$"
+}
+}

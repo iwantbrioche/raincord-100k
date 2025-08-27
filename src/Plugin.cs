@@ -43,6 +43,11 @@ namespace Raincord100k
         // Load any resources, such as sprites or sounds
         private void LoadResources(RainWorld rainWorld)
         {
+            FAtlas confettibulb = Futile.atlasManager.LoadAtlas("atlases/ConfettiBulb");
+            if (confettibulb != null)
+            {
+                Logger.LogDebug("ConfettiBulb atlas loaded!");
+            }
         }
     }
 }
