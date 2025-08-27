@@ -28,7 +28,8 @@ namespace Raincord100k
             // Add your PlacedObject.Types here
             POTypes.Add(ConfettiPlantPOType);
         }
-
+        
+        // probably don't need this, i just wanted it cuz i wanted to try out HashSets lol
         public static HashSet<PlacedObject.Type> POTypes = [];
     }
 }
